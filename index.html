@@ -4,13 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+
+    <!--styles.css esta mal refrenciada. -->
+    <!-- <link rel="stylesheet" href="assets/styles.css"> -->
+
+    <!--La forma correcta de referenciar: -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>APIs</title>
 </head>
 <body>
+  <h1>Corregiendo Errores</h1>
+
+  <h2>Los datos de JS</h2>
     <p class="name"></p>
     <p class="blog"></p>
+    <!--Agregar un elemento con la clase "location" para el JS-->
+    <p class="location"></p>
 
-  <script src="../assets/js/app.js"></script>
+    <!--Agregar una tabla faltante que menciona el CSS-->
+    <h3>Tabla</h3>
+    <table>
+      <tr> <!--Fila-->
+        <th>Nombre</th>
+        <th>Pais</th>
+      </tr>
+      <tr> <!--Fila-->
+        <td>Jose</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+    <!--Fin de Tabla-->
+
+    <!--Agregar una clase wrapper a un div-->
+    <div class="wrapper" >
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+
+    </div>
+
+    <!--Agregar una clase box a un div-->
+    <div class="box">
+      <h4>Hola, soy un h4</h4>
+
+    </div>
+
+    <!--Agregar un enlace al boton-->
+    <h6>Button:</h6>
+    <a href="https://github.com/" class ="button" target="_blank">
+      <button>Click Me!</button>
+    </a>
+    <!--Un enlace-->
+    <a href="https://github.com/" target="_blank">hello</a>
+
+    <!--Fieldset-->
+    <h4>Fieldset</h4>
+    <fieldset>
+      <legend>Informacion Personal</legend>
+      Nombre: <input name="nombre" type="text" tabindex="1">
+
+      <input type="checkbox" tabindex="20" name="edad" value="20-39" > 20-39
+    </fieldset>
+
+    <p class="success">YES!</p>
+
+
+    <!--form-->
+    <h5>Formulario</h5>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+
+      <label for="pais">Pais:</label>
+      <select name="pais" id="pais">
+        <option value="mexico">Mexico</option>
+        <option value="canada">Canada</option>
+      </select>
+    </form> <!--Fin de formulario-->
+
+
+    <!--Corregir correctamente la referencia al script-->
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
